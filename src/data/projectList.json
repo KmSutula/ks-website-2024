@@ -1,0 +1,61 @@
+{
+    "projects": [
+        {
+            "projectName": "The Composer Crawler",
+            "technologies": [
+                "React",
+                "Supabase",
+                "API",
+                "JavaScript",
+                "HTML",
+                "CSS"
+            ],
+            "description": "Built with React with data served from Supabase, the purpose of this site is to help music students quickly research well-known composers. The unstructured data for this project was scraped from the Wiki API, and was transformed with a mixture of JavaScript and manual editing.",
+            "codeLink": "https://github.com/KmSutula/The-Composer-Crawler",
+            "projectLink": "https://www.thecomposercrawler.com",
+            "projectImage": "composercrawler.png"
+        },
+        {
+            "projectName": "Quiz or Quit",
+            "technologies": [
+                "React",
+                "Framer Motion",
+                "API",
+                "JavaScript",
+                "HTML",
+                "CSS"
+            ],
+            "description": "This quiz application fetches data from Open Trivia Database to provide users with a quiz on their choice of topic, with customized difficulty, and length. The design is modeled after your typical 80s video game, full of bright colors and pixelated borders.",
+            "codeLink": "https://github.com/KmSutula/quiz-or-quit",
+            "projectLink": "https://kmsutula.github.io/quiz-or-quit/",
+            "projectImage": "quiz-or-quit.png"
+        },
+        {
+            "projectName": "JavaScript Calculator",
+            "technologies": [
+                "React",
+                "Bootstrap",
+                "JavaScript",
+                "HTML",
+                "CSS"
+            ],
+            "description": "This JavaScript calculator is mobile responsive and you can interact with your keyboard or mouse. Built exclusively with Bootstrap buttons in a flexbox, the design is simple and functional.",
+            "codeLink": "https://github.com/KmSutula/javascript-calculator",
+            "projectLink": "https://kmsutula.github.io/javascript-calculator/",
+            "projectImage": "calculator.png"
+        },
+        {
+            "projectName": "Personal Website / Portfolio",
+            "technologies": [
+                "Vue",
+                "JavaScript",
+                "HTML",
+                "SASS"
+            ],
+            "description": "This site serves as my portfolio and personal website. It was designed in Figma with a color palette inspired by the harvest moon. My goal was to make it clean and beautiful, while still adding fun features and plenty of personality.",
+            "codeLink": "https://github.com/KmSutula/kswebsite",
+            "projectLink": "https://www.kaleighsutula.com/",
+            "projectImage": "website.png"
+        }
+    ]
+}

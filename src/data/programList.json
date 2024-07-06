@@ -1,0 +1,64 @@
+{
+    "programs": [
+        {
+            "programName": "Get started using Google Analytics",
+            "issuer": "Google",
+            "certificationLink": "https://skillshop.credential.net/331132cb-fb19-4245-84e4-335a9211c147",
+            "completionDate": "May '24"
+        },
+        {
+            "programName": "C# Basics for Beginners",
+            "issuer": "Udemy",
+            "certificationLink": "https://www.udemy.com/certificate/UC-b50890f3-ff5b-494f-a5cd-235d25df7172/",
+            "completionDate": "December '22"
+        },
+        {
+            "programName": "The Web Developer Bootcamp 2022",
+            "issuer": "Udemy",
+            "certificationLink": "https://www.udemy.com/certificate/UC-9869b200-e7fa-437e-94c7-0d77ee750468/",
+            "completionDate": "November '22"
+        },
+        {
+            "programName": "50 Projects In 50 Days - HTML, CSS & JavaScript",
+            "issuer": "Udemy",
+            "certificationLink": "https://www.udemy.com/certificate/UC-2ceb0107-8c92-4572-a562-7bc24f49e843/",
+            "completionDate": "November '22"
+        },
+        {
+            "programName": "Learn React for Free",
+            "issuer": "Scrimba",
+            "certificationLink": "",
+            "completionDate": "October '22"
+        },
+        {
+            "programName": "JavaScript30",
+            "issuer": "WesBos.com",
+            "certificationLink": "",
+            "completionDate": "September '22"
+        },
+        {
+            "programName": "Front End Development Libraries",
+            "issuer": "freeCodeCamp",
+            "certificationLink": "https://www.freecodecamp.org/certification/sutulip/front-end-development-libraries",
+            "completionDate": "September '22"
+        },
+        {
+            "programName": "JavaScript Algorithms and Data Structures",
+            "issuer": "freeCodeCamp",
+            "certificationLink": "https://www.freecodecamp.org/certification/sutulip/javascript-algorithms-and-data-structures",
+            "completionDate": "August '22"
+        },
+        {
+            "programName": "Responsive Web Design",
+            "issuer": "freeCodeCamp",
+            "certificationLink": "https://www.freecodecamp.org/certification/sutulip/responsive-web-design",
+            "completionDate": "July '22"
+        },
+        {
+            "programName": "HTML5 & CS5 Fundamentals",
+            "issuer": "edX",
+            "certificationLink": "",
+            "completionDate": "July '22"
+        }
+    ]
+}

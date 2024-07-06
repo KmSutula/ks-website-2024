@@ -1,0 +1,50 @@
+{
+    "skills": [
+        {
+            "skillCategory": "Programming Languages",
+            "skills": [
+                "JavaScript ES6",
+                "TypeScript",
+                "C#",
+                "HTML",
+                "CSS",
+                "Sass",
+                "Python"
+            ]
+        },
+        {
+            "skillCategory": "Frameworks & Libraries",
+            "skills": [
+                "Vue",
+                "React",
+                "Redux",
+                "Angular",
+                "jQuery",
+                "Tailwind",
+                "Bootstrap",
+                "Express",
+                "Axios",
+                "Node.js"
+            ]
+        },
+        {
+            "skillCategory": "Design Tools",
+            "skills": [
+                "Figma",
+                "Adobe Photoshop",
+                "Adobe Illustrator",
+                "Adobe XD",
+                "Balsamiq"
+            ]
+        },
+        {
+            "skillCategory": "Databases",
+            "skills": [
+                "Microsoft SQL Server",
+                "MongoDB",
+                "Supabase",
+                "PostgreSQL"
+            ]
+        }
+    ]
+}
