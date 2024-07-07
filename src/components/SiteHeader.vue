@@ -1,7 +1,7 @@
 <template>
 	<div class="header">
 		<span class="header--text-left" @mouseover="showText('first')" ref="first">wo ich erschaffe,</span>
-		<a href="/"><img class="header--logo" src="/logo.png"/></a>
+		<a href="/"><img class="header--logo" src="/logo.png" alt="Kaleigh Sutula"/></a>
 		<span class="header--text-right" @mouseover="showText('second')" ref="second">da bin ich wahr</span>
 
 	</div>

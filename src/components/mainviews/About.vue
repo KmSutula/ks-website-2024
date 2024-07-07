@@ -4,15 +4,15 @@
 			<h2 class="about--subheader-one">hey there,</h2>
 			<div class="about--subheader-two">
 				<span>I'm</span>
-				<span><img class="about--subheader-image" src="/k.png"/>aleigh
+				<span><img class="about--subheader-image" src="/k.png" alt="k"/>aleigh
 				</span>
 				<span>
-					<img class="about--subheader-image" src="/s.png"/>utula...
+					<img class="about--subheader-image" src="/s.png" alt="s"/>utula...
 				</span>
 			</div>
 		</div>
 		<div class="about--left">
-			<img class="about--image" src="/headshot.png"/>
+			<img class="about--image" src="/headshot.png" alt="Headshot of Kaleigh Sutula"/>
 		</div>
 		<div class="about--right">
 			<p class="about--text">Uber passionate about making code readable to every member of the team, never making the same mistake thrice, mastering new technologies, picking apart concepts I don't understand, and lending a helping hand.
