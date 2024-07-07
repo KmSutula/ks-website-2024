@@ -2,10 +2,10 @@
     <div class="resume is-hidden" ref="resume">
         <h1 class="resume--header">Resume</h1>
 		<div class="resume--preview">
-        <iframe src="../../src/assets/SutulaResume.pdf" width="100%" height="100%">
+        <iframe src="/SutulaResume.pdf" width="100%" height="100%">
 			</iframe>
 		</div>
-        <a class="resume--download btn" href="../../src/assets/SutulaResume.pdf" download>Download</a>
+        <a class="resume--download btn" href="/SutulaResume.pdf" download>Download</a>
     </div>
 </template>
 
