@@ -5,7 +5,7 @@
 	<div class="projects--entries">
 		<div class="projects--entry" ref="project" v-for="(project, index) in projectsData" v-bind:key="index" :class="{ 'is-hidden': index !== 0 }" :data-order="`${index}`">
 			<div class="projects--entry-left">
-				<img class="projects--entry-image" :src="`/src/assets/${project.projectImage}`" />
+				<img class="projects--entry-image" :src="`/${project.projectImage}`" />
 			</div>
 			<div class="projects--entry-right">
 				<h3 class="projects--entry-header">{{ project.projectName }}</h3>

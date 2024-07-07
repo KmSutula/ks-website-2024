@@ -1,3 +1,40 @@
+<template>
+		<a href="#" class="nav-tabs--mobile-open" :class="{'is-expanded': isExpanded}" @click.prevent="expandMobileMenu"><Icon icon="mingcute:menu-fill"/></a>
+		<div class="nav-tabs--mobile slide-out" ref="mobileMenu">
+			<a href="#" class="nav-tabs--mobile-close" @click.prevent="expandMobileMenu">
+				<Icon icon="ep:close-bold"></Icon>
+			</a>
+			<div class="nav-tabs--mobile-experience slide-out" ref="secondMenuMobile">
+				<a href="#" class="nav-tab" @click.prevent="resetMenuView">
+					<Icon icon="charm:chevron-left"/> Back</a>
+				<RouterLink to="/experience/skills" class="nav-tab" @click="setIsLoading(true)">
+					Skills</RouterLink>
+				<RouterLink to="/experience/programs" class="nav-tab" @click="setIsLoading(true)">Programs</RouterLink>
+				<RouterLink to="/experience/resume" class="nav-tab" @click="setIsLoading(true)">Resume</RouterLink>
+			</div>
+			<div class="nav-tabs--mobile-main" ref="mainMenuMobile">
+				<RouterLink to="/" class="nav-tab" @click="setIsLoading(true)">About</RouterLink>
+				<a href="#" class="nav-tab" @click.prevent="setMenuView">Experience</a>
+				<RouterLink to="/projects" class="nav-tab" @click="setIsLoading(true)">Projects</RouterLink>
+				<RouterLink to="/contact" class="nav-tab" @click="setIsLoading(true)">Contact</RouterLink>
+			</div>
+		</div>
+		<div class="nav-tabs--main" ref="mainMenu">
+			<RouterLink to="/" class="nav-tab" @click="setIsLoading(false)">About</RouterLink>
+			<a href="#" class="nav-tab" @click.prevent="setMenuView">Experience</a>
+			<RouterLink to="/projects" class="nav-tab" @click="setIsLoading(false)">Projects</RouterLink>
+			<RouterLink to="/contact" class="nav-tab" @click="setIsLoading(false)">Contact</RouterLink>
+		</div>
+		<div class="nav-tabs--experience slide-out" ref="secondMenu">
+			<a href="#" class="nav-tab" @click.prevent="resetMenuView">
+				<Icon icon="charm:chevron-left"/> Back</a>
+			<RouterLink to="/experience/skills" class="nav-tab" @click="setIsLoading(false)">
+				Skills</RouterLink>
+			<RouterLink to="/experience/programs" class="nav-tab" @click="setIsLoading(false)">Programs</RouterLink>
+			<RouterLink to="/experience/resume" class="nav-tab" @click="setIsLoading(false)">Resume</RouterLink>
+		</div>
+</template>
+
 <script lang="ts">
 import { Icon } from '@iconify/vue';
 
@@ -60,40 +97,3 @@ export default {
 	},
 };
 </script>
-
-<template>
-		<a href="#" class="nav-tabs--mobile-open" :class="{'is-expanded': isExpanded}" @click.prevent="expandMobileMenu"><Icon icon="mingcute:menu-fill"/></a>
-		<div class="nav-tabs--mobile slide-out" ref="mobileMenu">
-			<a href="#" class="nav-tabs--mobile-close" @click.prevent="expandMobileMenu">
-				<Icon icon="ep:close-bold"></Icon>
-			</a>
-			<div class="nav-tabs--mobile-experience slide-out" ref="secondMenuMobile">
-				<a href="#" class="nav-tab" @click.prevent="resetMenuView">
-					<Icon icon="charm:chevron-left"/> Back</a>
-				<RouterLink to="/experience/skills" class="nav-tab" @click="setIsLoading(true)">
-					Skills</RouterLink>
-				<RouterLink to="/experience/programs" class="nav-tab" @click="setIsLoading(true)">Programs</RouterLink>
-				<RouterLink to="/experience/resume" class="nav-tab" @click="setIsLoading(true)">Resume</RouterLink>
-			</div>
-			<div class="nav-tabs--mobile-main" ref="mainMenuMobile">
-				<RouterLink to="/" class="nav-tab" @click="setIsLoading(true)">About</RouterLink>
-				<a href="#" class="nav-tab" @click.prevent="setMenuView">Experience</a>
-				<RouterLink to="/projects" class="nav-tab" @click="setIsLoading(true)">Projects</RouterLink>
-				<RouterLink to="/contact" class="nav-tab" @click="setIsLoading(true)">Contact</RouterLink>
-			</div>
-		</div>
-		<div class="nav-tabs--main" ref="mainMenu">
-			<RouterLink to="/" class="nav-tab" @click="setIsLoading(false)">About</RouterLink>
-			<a href="#" class="nav-tab" @click.prevent="setMenuView">Experience</a>
-			<RouterLink to="/projects" class="nav-tab" @click="setIsLoading(false)">Projects</RouterLink>
-			<RouterLink to="/contact" class="nav-tab" @click="setIsLoading(false)">Contact</RouterLink>
-		</div>
-		<div class="nav-tabs--experience slide-out" ref="secondMenu">
-			<a href="#" class="nav-tab" @click.prevent="resetMenuView">
-				<Icon icon="charm:chevron-left"/> Back</a>
-			<RouterLink to="/experience/skills" class="nav-tab" @click="setIsLoading(false)">
-				Skills</RouterLink>
-			<RouterLink to="/experience/programs" class="nav-tab" @click="setIsLoading(false)">Programs</RouterLink>
-			<RouterLink to="/experience/resume" class="nav-tab" @click="setIsLoading(false)">Resume</RouterLink>
-		</div>
-</template>
