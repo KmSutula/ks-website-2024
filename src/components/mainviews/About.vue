@@ -13,7 +13,6 @@
 		</div>
 		<div class="about--left">
 			<img class="about--image" src="../../assets/headshot.png"/>
-			<div class="about--shape"/>
 		</div>
 		<div class="about--right">
 			<p class="about--text">Uber passionate about making code readable to every member of the team, never making the same mistake thrice, mastering new technologies, picking apart concepts I don't understand, and lending a helping hand.

@@ -23,7 +23,7 @@ export default {
 		};
 	},
 	async mounted() {
-        this.programData = await fetch("../../src/data/programList.json").then(response => response.json()).then(data => data.programs);
+        this.programData = await fetch("../../../src/assets/data/programList.json").then(response => response.json()).then(data => data.programs);
 
 		this.$nextTick(() => {
 			setTimeout(() => {

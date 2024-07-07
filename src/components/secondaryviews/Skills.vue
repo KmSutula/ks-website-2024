@@ -23,7 +23,7 @@ export default {
 		};
 	},
 	async mounted() {
-        this.skillsData = await fetch("../../src/data/skillsList.json").then(response => response.json()).then(data => data.skills);
+        this.skillsData = await fetch("../../../src/assets/data/skillsList.json").then(response => response.json()).then(data => data.skills);
 
         this.$nextTick(() => {
 			setTimeout(() => {

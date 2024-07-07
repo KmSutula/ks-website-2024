@@ -44,7 +44,7 @@ export default {
 		};
 	},
 	async mounted() {
-		this.projectsData = await fetch("../../src/data/projectList.json").then(response => response.json()).then(data => data.projects);
+		this.projectsData = await fetch("../../../src/assets/data/projectList.json").then(response => response.json()).then(data => data.projects);
 
 		this.$nextTick(() => {
 			setTimeout(() => {
