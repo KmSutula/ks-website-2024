@@ -11,12 +11,8 @@ export default {
 
 <template>
 	<div class="social-tab--container">
-		<a class="social-tab" href="https://x.com/kmsutula">
-			<Icon icon="mingcute:social-x-line"/>
-		</a>
 		<a class="social-tab" href="https://github.com/KmSutula">
 			<Icon icon="mingcute:github-line"/>
-
 		</a>
 		<a class="social-tab" href="https://www.linkedin.com/in/kaleighsutula/">
 			<Icon icon="eva:linkedin-outline"/>

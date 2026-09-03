@@ -17,7 +17,7 @@
 		<div class="about--right">
 			<p class="about--text">Uber passionate about making code readable to every member of the team, never making the same mistake thrice, mastering new technologies, picking apart concepts I don't understand, and lending a helping hand.
 			<br/>
-			I am currently working with Multitracks.com as a Junior Front End Developer, and use my free time to develop sites that help increase my productivity and indulge my hobbies.</p>
+			I am currently working with Multitracks.com as a Front End Team Lead, and use my free time to develop sites that help increase my productivity and indulge my hobbies.</p>
 		</div>
 	</div>
 </template>
