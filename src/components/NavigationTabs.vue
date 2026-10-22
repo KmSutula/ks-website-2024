@@ -7,8 +7,8 @@
 			<div class="nav-tabs--mobile-experience slide-out" ref="secondMenuMobile">
 				<a href="#" class="nav-tab" @click.prevent="resetMenuView">
 					<Icon icon="charm:chevron-left"/> Back</a>
-				<RouterLink to="/experience/skills" class="nav-tab" @click="setIsLoading(true)">
-					Skills</RouterLink>
+				<RouterLink to="/experience/technologies" class="nav-tab" @click="setIsLoading(true)">
+					Technologies</RouterLink>
 				<RouterLink to="/experience/programs" class="nav-tab" @click="setIsLoading(true)">Programs</RouterLink>
 				<RouterLink to="/experience/resume" class="nav-tab" @click="setIsLoading(true)">Resume</RouterLink>
 			</div>
@@ -28,8 +28,8 @@
 		<div class="nav-tabs--experience slide-out" ref="secondMenu">
 			<a href="#" class="nav-tab" @click.prevent="resetMenuView">
 				<Icon icon="charm:chevron-left"/> Back</a>
-			<RouterLink to="/experience/skills" class="nav-tab" @click="setIsLoading(false)">
-				Skills</RouterLink>
+			<RouterLink to="/experience/technologies" class="nav-tab" @click="setIsLoading(false)">
+				Technologies</RouterLink>
 			<RouterLink to="/experience/programs" class="nav-tab" @click="setIsLoading(false)">Programs</RouterLink>
 			<RouterLink to="/experience/resume" class="nav-tab" @click="setIsLoading(false)">Resume</RouterLink>
 		</div>

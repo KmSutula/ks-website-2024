@@ -1,40 +1,38 @@
 {
     "skills": [
         {
-            "skillCategory": "Programming Languages",
-            "skills": [
-                "JavaScript ES6",
-                "TypeScript",
-                "C#",
-                "HTML",
-                "CSS",
-                "Sass",
-                "Python"
-            ]
-        },
-        {
-            "skillCategory": "Frameworks & Libraries",
+            "skillCategory": "Frontend",
             "skills": [
                 "Vue",
                 "React",
-                "Redux",
-                "Angular",
+                "TypeScript",
+                "JavaScript",
                 "jQuery",
-                "Tailwind",
+                "HTML",
+                "CSS/SCSS",
                 "Bootstrap",
-                "Express",
-                "Axios",
+                "Playwright",
                 "Node.js"
             ]
         },
         {
-            "skillCategory": "Design Tools",
+            "skillCategory": "Backend",
             "skills": [
+                "C#",
+                "ASP.NET Core",
+                "REST APIs",
+                "Azure"
+            ]
+        },
+        {
+            "skillCategory": "Tools",
+            "skills": [
+                "Git",
+                "Docker",
                 "Figma",
-                "Adobe Photoshop",
-                "Adobe Illustrator",
-                "Adobe XD",
-                "Balsamiq"
+                "Jira",
+                "Octopus Deploy",
+                "Redis"
             ]
         },
         {

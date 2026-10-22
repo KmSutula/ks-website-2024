@@ -15,9 +15,12 @@
 			<img class="about--image" src="/headshot.png" alt="Headshot of Kaleigh Sutula"/>
 		</div>
 		<div class="about--right">
-			<p class="about--text">Uber passionate about making code readable to every member of the team, never making the same mistake thrice, mastering new technologies, picking apart concepts I don't understand, and lending a helping hand.
+			<h3 class="about--right--header">Frontend Engineer · Team Lead</h3>
+			<p class="about--text">
+				I build maintainable web applications with Vue, TypeScript, and ASP.NET Core.</br>
+				Uber passionate about making code readable to every member of the team, never making the same mistake thrice, mastering new technologies, picking apart concepts I don't understand, and lending a helping hand.
 			<br/>
-			I am currently working with Multitracks.com as a Front End Team Lead, and use my free time to develop sites that help increase my productivity and indulge my hobbies.</p>
+		</p>
 		</div>
 	</div>
 </template>

@@ -1,6 +1,6 @@
 <template>
     <div class="skills is-hidden" ref="skills">
-        <h1 class="skills--header">Skills</h1>
+        <h1 class="skills--header">Technologies</h1>
         <div class="skills--content">
             <div v-for="skillset in skillsData">
                 <h2 class="skills--subheader">{{skillset.skillCategory}}</h2>
