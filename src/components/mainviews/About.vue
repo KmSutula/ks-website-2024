@@ -17,10 +17,10 @@
 		<div class="about--right">
 			<h3 class="about--right--header">Frontend Engineer · Team Lead</h3>
 			<p class="about--text">
-				I build maintainable web applications with Vue, TypeScript, and ASP.NET Core.</br>
+				I build maintainable web applications with Vue, TypeScript, and ASP.NET Core.<br/>
 				Uber passionate about making code readable to every member of the team, never making the same mistake thrice, mastering new technologies, picking apart concepts I don't understand, and lending a helping hand.
-			<br/>
-		</p>
+				<br/>
+			</p>
 		</div>
 	</div>
 </template>
