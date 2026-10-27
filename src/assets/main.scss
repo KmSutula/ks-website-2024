@@ -21,15 +21,18 @@ body {
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #app {
     max-width: 1280px;
     margin: 0 auto;
     padding: 1rem;
     font-weight: normal;
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .wrapper {
@@ -185,7 +188,7 @@ body {
 .nav-tabs {
     &--mobile {
         background-color: $navy;
-        position: absolute;
+        position: fixed;
         width: 60vw;
         height: 100vh;
         transition: all 0.5s ease-in-out;
@@ -211,7 +214,8 @@ body {
 
         &-open {
             color: $white;
-            position: absolute;
+            position: fixed;
+            z-index: 3;
             transition: all 0.5s ease-in-out;
             top: 16px;
             left: 16px;
@@ -279,25 +283,6 @@ body {
             }
         }
     }
-
-    // &--experience {
-    //     transition: all 1s ease-in-out;
-    //     left: -100%;
-
-    //     @media (min-width: $md) {
-    //         right: -100%;
-    //         left: unset;
-    //     }
-
-    //     &.slide-in {
-    //         left: 0;
-
-    //         @media (min-width: $md) {
-    //             right: 0;
-    //             left: unset;
-    //         }
-    //     }
-    // }
 }
 
 .nav-tab {
@@ -327,7 +312,8 @@ body {
         transition: transform 0.6s ease-in-out;
     }
 
-    &.router-link-active {
+    &.router-link-active,
+    &.is-active {
         color: $gold;
 
         &::before {
@@ -378,51 +364,61 @@ body {
 
 .main {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 100%;
     grid-template-areas:
-        "header header"
-        "content content"
-        "social social";
+        "header"
+        "content"
+        "social";
     width: 100%;
 
     @media (min-width: $md) {
-        grid-template-columns: 22% 78%;
-        grid-template-areas:
-            "none header"
-            "nav content"
-            "nav social";
         padding: 10px;
-    }
-
-    @media (min-width: $lg) {
-        grid-template-columns: 17% 83%;
-    }
-
-    @media (min-width: $xl) {
-        grid-template-columns: 14% 86%;
     }
 
     &--content {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         z-index: 1;
         grid-area: content;
-        padding: 24px 18px;
         width: 100%;
-        height: 700px;
-        border: 2px solid transparent;
-        background-color: $deep-navy;
-        background-image: linear-gradient($deep-navy, $deep-navy), $gradient-border;
-        background-origin: border-box;
-        background-clip: padding-box, border-box;
-        overflow-y: auto;
-        overflow-x: clip;
+    }
+}
 
-        @media (min-width: $lg) {
-            padding: 24px;
-            height: 55vh;
-            max-width: unset;
+.section {
+    &--header {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        display: flex;
+        padding-left: 56px;
+        margin-bottom: 40px;
+        background-color: $deep-navy;
+        border-bottom: 2px solid transparent;
+        border-image: $gradient-border 1;
+
+        @media (min-width: $md) {
+            padding-left: 0;
         }
+    }
+
+    &--body {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 18px 80px;
+        filter: blur(4px);
+        opacity: 0.4;
+        transition:
+            filter 0.6s ease-in-out,
+            opacity 0.6s ease-in-out;
+    }
+
+    &.is-focused &--body {
+        filter: none;
+        opacity: 1;
     }
 }
 
@@ -448,10 +444,6 @@ body {
         color: $white;
         grid-area: header;
         margin-bottom: 20px;
-
-        // @media (min-width: $sm) {
-        //     margin-bottom: 0;
-        // }
     }
 
     &--subheader {
@@ -591,11 +583,9 @@ body {
         position: relative;
         width: 100%;
         margin: 0 auto;
-        height: 500px;
 
         @media (min-width: $lg) {
             width: 90%;
-            height: 805%;
             overflow-x: clip;
         }
     }
@@ -611,22 +601,11 @@ body {
 
         @media (min-width: $md) {
             grid-template-columns: minmax(200px, 50%) 60%;
-            // grid-template-columns: 35% minmax(auto, 60%);
-
             grid-template-rows: unset;
         }
 
         @media (min-width: $lg) {
             transition: opacity 0.6s ease-in-out;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-
-            &.is-hidden {
-                opacity: 0;
-                z-index: -1;
-            }
         }
 
         &-image {

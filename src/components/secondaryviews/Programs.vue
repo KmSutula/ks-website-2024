@@ -1,6 +1,5 @@
 <template>
     <div class="programs is-hidden" ref="programs">
-        <h2 class="programs--header">Programs</h2>
         <div v-for="program in programData" class="programs--entry">
 			<h3 class="programs--entry-name">{{ program.programName }}</h3>
 			<h3 class="programs--entry-issuer">{{ program.issuer }}</h3>

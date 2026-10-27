@@ -1,6 +1,16 @@
 {
     "projects": [
         {
+            "projectName": "Live Communication Log",
+            "technologies": [
+                "C#",
+                "ASP.NET",
+                "API"
+            ],
+            "description": "A tool built with C# ASP.NET framework, designed to keep all the threads of a project in one place. This tool listens for a trigger hashtag that is assigned to the project to sync the information in the comment to a Confluence document. Comments from Jira, Figma, and Teams chats are compiled into a date organized list of information that updates any time the hashtag is used.",
+            "projectImage": "liveCommsLog.png"
+        },
+        {
             "projectName": "The Composer Crawler",
             "technologies": [
                 "React",
@@ -29,20 +39,6 @@
             "codeLink": "https://github.com/KmSutula/quiz-or-quit",
             "projectLink": "https://kmsutula.github.io/quiz-or-quit/",
             "projectImage": "quiz-or-quit.png"
-        },
-        {
-            "projectName": "JavaScript Calculator",
-            "technologies": [
-                "React",
-                "Bootstrap",
-                "JavaScript",
-                "HTML",
-                "CSS"
-            ],
-            "description": "This JavaScript calculator is mobile responsive and you can interact with your keyboard or mouse. Built exclusively with Bootstrap buttons in a flexbox, the design is simple and functional.",
-            "codeLink": "https://github.com/KmSutula/javascript-calculator",
-            "projectLink": "https://kmsutula.github.io/javascript-calculator/",
-            "projectImage": "calculator.png"
         },
         {
             "projectName": "Personal Website / Portfolio",

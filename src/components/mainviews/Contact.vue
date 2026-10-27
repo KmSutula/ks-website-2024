@@ -1,9 +1,6 @@
 
 <template>
  <div class="contact is-hidden" ref="contact">
-        <h2 class="contact--header">
-          Contact
-        </h2>
         <p class="contact--subheader">
           Tell me your most niche app idea, what your ideal website looks like,
           or any other projects you need help with.

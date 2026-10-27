@@ -1,6 +1,5 @@
 <template>
     <div class="resume is-hidden" ref="resume">
-        <h1 class="resume--header">Resume</h1>
 		<div class="resume--preview">
         <iframe src="/SutulaResume.pdf" width="100%" height="100%">
 			</iframe>

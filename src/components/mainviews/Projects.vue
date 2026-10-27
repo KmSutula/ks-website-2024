@@ -1,9 +1,7 @@
 <template>
 <div class="projects is-hidden" ref="projects">
-	<Icon class="projects--nav nav-left" icon="charm:chevron-left" @click="stepLeft"></Icon>
-	<h2 class="projects--header">Projects</h2>
 	<div class="projects--entries">
-		<div class="projects--entry" ref="project" v-for="(project, index) in projectsData" v-bind:key="index" :class="{ 'is-hidden': index !== 0 }" :data-order="`${index}`">
+		<div class="projects--entry" ref="project" v-for="(project, index) in projectsData" v-bind:key="index" :data-order="`${index}`">
 			<div class="projects--entry-left">
 				<img class="projects--entry-image" :src="`/${project.projectImage}`" />
 			</div>
@@ -17,13 +15,12 @@
 				</h4>
 				<p class="projects--entry-desc">{{ project.description }}</p>
 				<div class="projects--entry--btn-holder">
-					<a class="projects--entry-btn btn" :href="project.codeLink" target="_blank">Code</a>
-					<a class="projects--entry-btn btn" :href="project.projectLink" target="_blank">Demo</a>
+					<a class="projects--entry-btn btn" v-if="project.codeLink" :href="project.codeLink" target="_blank">Code</a>
+					<a class="projects--entry-btn btn" v-if="project.projectLink" :href="project.projectLink" target="_blank">Demo</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<Icon class="projects--nav nav-right" icon="charm:chevron-right" @click="stepRight"></Icon>
 </div>
 </template>
 
