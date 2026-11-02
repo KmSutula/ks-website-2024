@@ -12,7 +12,7 @@
 			</div>
 		</div>
 		<div class="about--left">
-			<img class="about--image" src="/headshot.png" alt="Headshot of Kaleigh Sutula"/>
+			<img class="about--image" src="/headshot.jpg" alt="Headshot of Kaleigh Sutula"/>
 		</div>
 		<div class="about--right">
 			<h3 class="about--right--header">Frontend Engineer · Team Lead</h3>
@@ -28,9 +28,6 @@
 <script lang="ts">
 
 export default {
-	emits: [
-		"setIsLoading"
-	],
 	props: {
 		msg: {
 			type: String,
@@ -40,17 +37,7 @@ export default {
 	data() {
 		return {
 			newPromo: "",
-			isLoading: true,
-
 		};
-	},
-	mounted() {
-		this.$nextTick(() => {
-			setTimeout(() => {
-				this.$emit("setIsLoading", false);
-				 this.$refs.about.classList.remove('is-hidden');
-			}, 300);
-		});
 	},
 
 };

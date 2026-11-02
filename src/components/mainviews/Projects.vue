@@ -3,7 +3,7 @@
 	<div class="projects--entries">
 		<div class="projects--entry" ref="project" v-for="(project, index) in projectsData" v-bind:key="index" :data-order="`${index}`">
 			<div class="projects--entry-left">
-				<img class="projects--entry-image" :src="`/${project.projectImage}`" />
+				<img class="projects--entry-image" :src="`/${project.projectImage}`" :alt="`${project.projectName}`" />
 			</div>
 			<div class="projects--entry-right">
 				<h3 class="projects--entry-header">{{ project.projectName }}</h3>

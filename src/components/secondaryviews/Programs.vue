@@ -12,9 +12,6 @@
 
 <script lang="ts">
 export default {
-	emits: [
-		"setIsLoading",
-	],
 	data() {
 		return {
 			newPromo: "",
@@ -23,13 +20,6 @@ export default {
 	},
 	async mounted() {
         this.programData = await fetch("/programList.json").then(response => response.json()).then(data => data.programs);
-
-		this.$nextTick(() => {
-			setTimeout(() => {
-				this.$emit("setIsLoading", false);
-				 this.$refs.programs.classList.remove('is-hidden');
-			}, 300);
-		});
 	},
 };
 </script>

@@ -5,12 +5,12 @@
 				<Icon icon="ep:close-bold"></Icon>
 			</a>
 			<div class="nav-tabs--mobile-main">
-				<a href="#about" class="nav-tab" @click="expandMobileMenu">About</a>
-				<a href="#projects" class="nav-tab" @click="expandMobileMenu">Projects</a>
-				<a href="#technologies" class="nav-tab" @click="expandMobileMenu">Technologies</a>
-				<a href="#programs" class="nav-tab" @click="expandMobileMenu">Programs</a>
-				<a href="#resume" class="nav-tab" @click="expandMobileMenu">Resume</a>
-				<a href="#contact" class="nav-tab" @click="expandMobileMenu">Contact</a>
+				<a href="#about" class="nav-tab" @click="expandMobileMenu" aria-label="About">About</a>
+				<a href="#projects" class="nav-tab" @click="expandMobileMenu" aria-label="Projects">Projects</a>
+				<a href="#technologies" class="nav-tab" @click="expandMobileMenu" aria-label="Technologies">Technologies</a>
+				<a href="#programs" class="nav-tab" @click="expandMobileMenu" aria-label="Programs">Programs</a>
+				<a href="#resume" class="nav-tab" @click="expandMobileMenu" aria-label="Resume">Resume</a>
+				<a href="#contact" class="nav-tab" @click="expandMobileMenu" aria-label="Contact">Contact</a>
 			</div>
 		</div>
 </template>

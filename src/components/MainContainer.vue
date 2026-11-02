@@ -8,9 +8,6 @@ import Programs from './secondaryviews/Programs.vue';
 import Resume from './secondaryviews/Resume.vue';
 
 export default {
-	props: {
-		isLoading: Boolean,
-	},
 	components: {
 		Icon,
 		About,
@@ -20,9 +17,6 @@ export default {
 		Resume,
 		Contact,
 	},
-	emits: [
-		"setIsLoading",
-	],
 	data() {
 		return {
 			sections: [
@@ -51,18 +45,11 @@ export default {
 	beforeUnmount() {
 		this.observer?.disconnect();
 	},
-	methods: {
-		setIsLoading(isLoading: boolean) {
-			this.$emit("setIsLoading", isLoading);
-		}
-	},
-
 };
 </script>
 
 <template>
 	<div class="main--content">
-		<Icon v-if="isLoading" class="loader" icon="svg-spinners:tadpole"></Icon>
 		<section
 			v-for="section in sections"
 			:key="section.id"
@@ -75,7 +62,7 @@ export default {
 				<a :href="`#${section.id}`" class="nav-tab" :class="{ 'is-active': focusedSection === section.id }">{{ section.title }}</a>
 			</div>
 			<div class="section--body">
-				<component :is="section.component" @setIsLoading="setIsLoading" />
+				<component :is="section.component" />
 			</div>
 		</section>
 	</div>

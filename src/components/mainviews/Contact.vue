@@ -62,17 +62,6 @@
 
 <script lang="ts">
 export default {
-  emits: [
-    "setIsLoading",
-  ],
-	mounted() {
-    this.$nextTick(() => {
-			setTimeout(() => {
-				this.$emit("setIsLoading", false);
-				this.$refs.contact.classList.remove('is-hidden');
-			}, 300);
-		})
-	},
 };
 </script>
 

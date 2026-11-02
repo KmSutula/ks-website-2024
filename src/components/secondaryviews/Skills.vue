@@ -13,9 +13,6 @@
 
 <script lang="ts">
 export default {
-    emits: [
-        "setIsLoading",
-    ],
 	data() {
 		return {
             skillsData: null,
@@ -23,13 +20,6 @@ export default {
 	},
 	async mounted() {
         this.skillsData = await fetch("/skillsList.json").then(response => response.json()).then(data => data.skills);
-
-        this.$nextTick(() => {
-			setTimeout(() => {
-				this.$emit("setIsLoading", false);
-				 this.$refs.skills.classList.remove('is-hidden');
-			}, 300);
-		});
 	},
 
 };

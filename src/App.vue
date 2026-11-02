@@ -13,15 +13,11 @@ export default {
   },
   data() {
     return {
-      isLoading: true,
     };
   },
   mounted() {
   },
   methods: {
-    setIsLoading(isLoading: boolean) {
-			this.isLoading = isLoading;
-		}
   }
 }
 </script>
@@ -30,8 +26,8 @@ export default {
     <div class="wrapper">
         <div class="main">
           <SiteHeader />
-          <NavigationTabs @setIsLoading="setIsLoading" :isLoading="isLoading" />
-          <MainContainer @setIsLoading="setIsLoading" :isLoading="isLoading"/>
+          <NavigationTabs />
+          <MainContainer />
           <SocialTabs />
         </div>
     </div>
