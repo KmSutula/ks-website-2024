@@ -1,5 +1,5 @@
 <template>
-	<div class="about is-hidden" ref="about">
+	<div class="about" ref="about">
 		<div class="about--header">
 			<h2 class="about--subheader-one">hey there,</h2>
 			<div class="about--subheader-two">
